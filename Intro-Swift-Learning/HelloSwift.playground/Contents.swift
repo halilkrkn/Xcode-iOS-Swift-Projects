@@ -1,5 +1,5 @@
 import UIKit
 
-var greeting = "Hello, Swift"
-let halil = "Hi, Halilkrkn"
-var helloWorld = "Hello World"
+var greeting = "Hello, playground"
+var hi = "Hi, Halilkrkn"
+let helloWorld = "Hello World"

@@ -8,3 +8,8 @@ Intro_Swift_Learning/Hello_Swift.playground/playground.xcworkspace/contents.xcwo
 .DS_Store
 .DS_Store
 .DS_Store
+*.xcplayground
+*.xcworkspacedata
+*.xcuserstate
+*.xctimeline
+*.plist

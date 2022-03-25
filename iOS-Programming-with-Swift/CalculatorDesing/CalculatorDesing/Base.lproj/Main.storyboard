@@ -208,17 +208,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-aI-IOA">
                                 <rect key="frame" x="0.0" y="727" width="414" height="135"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-1q-ufZ">
-                                        <rect key="frame" x="8" y="0.0" width="137" height="135"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rH-vG-TQK">
+                                        <rect key="frame" x="235" y="34" width="75" height="101"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="0">
-                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="35"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=".">
+                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="100"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsO-vk-mKc">
-                                        <rect key="frame" x="342" y="18" width="34" height="56"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKK-Ue-aH9">
+                                        <rect key="frame" x="312" y="32" width="80" height="104"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="=">
@@ -226,30 +226,32 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCd-FI-je3">
-                                        <rect key="frame" x="169" y="18" width="121" height="98"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-1q-ufZ">
+                                        <rect key="frame" x="28" y="8" width="199" height="131"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=".">
-                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="100"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="0">
+                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="35"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="OCd-FI-je3" firstAttribute="width" secondItem="xsO-vk-mKc" secondAttribute="width" constant="1" id="5j9-Ix-suO"/>
-                                    <constraint firstItem="OCd-FI-je3" firstAttribute="top" secondItem="xsO-vk-mKc" secondAttribute="top" id="6pm-uW-XqJ"/>
-                                    <constraint firstItem="mbe-1q-ufZ" firstAttribute="leading" secondItem="Yfd-aI-IOA" secondAttribute="leading" constant="1" id="7Q8-Ml-kQT"/>
-                                    <constraint firstItem="OCd-FI-je3" firstAttribute="width" secondItem="mbe-1q-ufZ" secondAttribute="width" constant="1" id="9v9-gx-DeP"/>
-                                    <constraint firstItem="OCd-FI-je3" firstAttribute="bottom" secondItem="xsO-vk-mKc" secondAttribute="bottom" id="ELr-Jm-30W"/>
+                                    <constraint firstItem="mbe-1q-ufZ" firstAttribute="centerY" secondItem="Yfd-aI-IOA" secondAttribute="centerY" id="413-w4-nff"/>
+                                    <constraint firstItem="3rH-vG-TQK" firstAttribute="width" secondItem="mbe-1q-ufZ" secondAttribute="width" constant="2" id="BYH-tK-hcI"/>
+                                    <constraint firstItem="fKK-Ue-aH9" firstAttribute="top" secondItem="3rH-vG-TQK" secondAttribute="top" id="FnP-Jh-89e"/>
+                                    <constraint firstItem="fKK-Ue-aH9" firstAttribute="centerY" secondItem="Yfd-aI-IOA" secondAttribute="centerY" id="Hbx-HO-1yf"/>
+                                    <constraint firstItem="fKK-Ue-aH9" firstAttribute="bottom" secondItem="3rH-vG-TQK" secondAttribute="bottom" id="JF7-y5-vyl"/>
+                                    <constraint firstAttribute="trailing" secondItem="fKK-Ue-aH9" secondAttribute="trailing" constant="1" id="N5f-BO-Jjw"/>
                                     <constraint firstAttribute="bottom" secondItem="mbe-1q-ufZ" secondAttribute="bottom" id="OCR-F7-1Iu"/>
-                                    <constraint firstItem="OCd-FI-je3" firstAttribute="bottom" secondItem="mbe-1q-ufZ" secondAttribute="bottom" id="OPb-x5-ugp"/>
-                                    <constraint firstItem="xsO-vk-mKc" firstAttribute="leading" secondItem="OCd-FI-je3" secondAttribute="trailing" constant="1" id="bdV-Cn-EgL"/>
-                                    <constraint firstAttribute="trailing" secondItem="xsO-vk-mKc" secondAttribute="trailing" constant="1" id="d2Y-PH-Bo3"/>
-                                    <constraint firstItem="OCd-FI-je3" firstAttribute="leading" secondItem="mbe-1q-ufZ" secondAttribute="trailing" constant="1" id="fbF-uc-C88"/>
+                                    <constraint firstItem="fKK-Ue-aH9" firstAttribute="width" secondItem="3rH-vG-TQK" secondAttribute="width" constant="103" id="R4n-If-ume"/>
+                                    <constraint firstItem="3rH-vG-TQK" firstAttribute="leading" secondItem="mbe-1q-ufZ" secondAttribute="trailing" constant="1" id="W0H-B0-Wk1"/>
                                     <constraint firstItem="mbe-1q-ufZ" firstAttribute="top" secondItem="Yfd-aI-IOA" secondAttribute="top" id="hhx-jL-LxJ"/>
-                                    <constraint firstItem="mbe-1q-ufZ" firstAttribute="centerY" secondItem="OCd-FI-je3" secondAttribute="centerY" id="vsc-Aa-KJO"/>
+                                    <constraint firstItem="fKK-Ue-aH9" firstAttribute="leading" secondItem="3rH-vG-TQK" secondAttribute="trailing" constant="1" id="hm7-77-tHk"/>
+                                    <constraint firstItem="mbe-1q-ufZ" firstAttribute="leading" secondItem="Yfd-aI-IOA" secondAttribute="leading" constant="1" id="lH8-3h-hjS"/>
+                                    <constraint firstItem="3rH-vG-TQK" firstAttribute="bottom" secondItem="mbe-1q-ufZ" secondAttribute="bottom" id="mxz-g3-CPJ"/>
+                                    <constraint firstItem="3rH-vG-TQK" firstAttribute="top" secondItem="mbe-1q-ufZ" secondAttribute="top" id="uN7-r0-FTP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPo-EN-bl9">

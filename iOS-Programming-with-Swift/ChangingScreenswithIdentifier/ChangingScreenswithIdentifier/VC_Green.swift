@@ -15,7 +15,11 @@ class VC_Green: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnBackScreen(_ sender: Any) {
+        // Dismiss fonksiyonu ile bir önceki ekrana geri döndük.
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

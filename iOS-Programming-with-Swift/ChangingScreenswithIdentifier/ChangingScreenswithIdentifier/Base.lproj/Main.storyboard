@@ -57,6 +57,19 @@
                     <view key="view" contentMode="scaleToFill" id="zCE-gE-mX7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdC-fQ-3O5">
+                                <rect key="frame" x="128" y="412" width="159" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Geri Dön">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnBackScreen:" destination="t3R-IX-Xsg" eventType="touchUpInside" id="X6b-rp-UhX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sS6-XQ-Pma"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
@@ -64,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlf-KU-MTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="-563"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="-563.16964285714278"/>
         </scene>
     </scenes>
     <resources>

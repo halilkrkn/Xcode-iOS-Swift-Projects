@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mf4-84-t4S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTabbarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="422"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="aWb-Vb-hk2">
+            <objects>
+                <viewController id="QhG-2Y-Axm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QgF-ZB-clf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Pav-s4-P9g"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="dDV-jY-1L9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aX7-mZ-pAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="435"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="1qh-tm-b6u">
+            <objects>
+                <viewController id="HDM-tu-M3h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZrH-xc-eTE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ly0-gY-XQe"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Jcf-z7-Aaw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNy-is-ooF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="-172"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="T6G-Yr-JUI">
+            <objects>
+                <tabBarController id="Mf4-84-t4S" customClass="TBC_Main" customModule="CustomTabbarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qbx-fk-TIh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="btnEkran1" destination="cjS-ab-U2y" id="kHE-Oo-pef"/>
+                        <outlet property="btnEkran2" destination="uIX-6h-FcP" id="nxH-S0-9Ea"/>
+                        <outlet property="tbvOzel" destination="Gkf-E2-pEQ" id="KbB-sf-yPp"/>
+                        <segue destination="HDM-tu-M3h" kind="relationship" relationship="viewControllers" id="kZw-Tm-U9o"/>
+                        <segue destination="QhG-2Y-Axm" kind="relationship" relationship="viewControllers" id="Wbc-NP-EpV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocB-ly-NaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Gkf-E2-pEQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjS-ab-U2y">
+                            <rect key="frame" x="16" y="37" width="197" height="56"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Ekran 1">
+                                <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tabDegistir:" destination="Mf4-84-t4S" eventType="touchUpInside" id="uzP-3B-GIg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIX-6h-FcP">
+                            <rect key="frame" x="207" y="49" width="207" height="84"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Ekran2">
+                                <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="35"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tabDegistir:" destination="Mf4-84-t4S" eventType="touchUpInside" id="uG9-No-LEH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Muq-P7-jgx"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="cjS-ab-U2y" firstAttribute="leading" secondItem="Muq-P7-jgx" secondAttribute="leading" id="6eI-pq-FWT"/>
+                        <constraint firstItem="uIX-6h-FcP" firstAttribute="leading" secondItem="cjS-ab-U2y" secondAttribute="trailing" id="Nfv-hc-6hs"/>
+                        <constraint firstItem="cjS-ab-U2y" firstAttribute="top" secondItem="Muq-P7-jgx" secondAttribute="top" id="OUD-Xp-clo"/>
+                        <constraint firstItem="cjS-ab-U2y" firstAttribute="width" secondItem="uIX-6h-FcP" secondAttribute="width" id="hC8-ZM-KRL"/>
+                        <constraint firstItem="Muq-P7-jgx" firstAttribute="trailing" secondItem="uIX-6h-FcP" secondAttribute="trailing" id="jDj-K1-5ym"/>
+                        <constraint firstItem="uIX-6h-FcP" firstAttribute="centerY" secondItem="cjS-ab-U2y" secondAttribute="centerY" id="oXP-Ag-KYV"/>
+                        <constraint firstItem="uIX-6h-FcP" firstAttribute="height" secondItem="cjS-ab-U2y" secondAttribute="height" id="vse-BX-M6u"/>
+                        <constraint firstItem="Muq-P7-jgx" firstAttribute="bottom" secondItem="cjS-ab-U2y" secondAttribute="bottom" id="z8Z-qJ-Ooa"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-245" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

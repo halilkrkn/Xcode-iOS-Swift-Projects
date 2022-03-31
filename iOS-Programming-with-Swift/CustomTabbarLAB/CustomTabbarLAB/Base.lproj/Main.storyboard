@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t4A-0Y-4eg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="Vut-Lu-e28">
+            <objects>
+                <viewController id="axo-2D-ZFZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwm-ly-cNV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PJx-sR-bXQ"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="jcI-1B-upF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeb-rU-WrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="431"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="oY3-tm-Nj8">
+            <objects>
+                <viewController id="ure-Xk-MbA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K52-Ld-SEb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jf6-sK-EIa"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="k32-1Q-Xa5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cB-YG-Dp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="-176"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="oaB-1O-kaG">
+            <objects>
+                <tabBarController id="t4A-0Y-4eg" customClass="TBC_Main" customModule="CustomTabbarLAB" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Xf-uZ-cgS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="ivApple" destination="iEM-Cv-XPR" id="Y09-2b-7B0"/>
+                        <outlet property="ivBrave" destination="yqr-Mj-uFa" id="QFr-BR-3Hs"/>
+                        <outlet property="tbvAnaView" destination="kJN-fN-0Fc" id="zDb-V7-gmT"/>
+                        <outlet property="view1" destination="nTb-MM-NO1" id="SIW-7C-lmK"/>
+                        <outlet property="view2" destination="F5X-pb-wm8" id="av3-UQ-FrV"/>
+                        <segue destination="ure-Xk-MbA" kind="relationship" relationship="viewControllers" id="gop-Cd-ZQj"/>
+                        <segue destination="axo-2D-ZFZ" kind="relationship" relationship="viewControllers" id="BfC-KM-QnL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCU-Vw-MJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="kJN-fN-0Fc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTb-MM-NO1" userLabel="View1">
+                            <rect key="frame" x="0.0" y="44" width="207" height="84"/>
+                            <color key="backgroundColor" name="SeciliOlmayan"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5X-pb-wm8" userLabel="View2">
+                            <rect key="frame" x="207" y="44" width="207" height="84"/>
+                            <color key="backgroundColor" name="SeciliOlmayan"/>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icons8-apple-logo-150()-1" translatesAutoresizingMaskIntoConstraints="NO" id="iEM-Cv-XPR">
+                            <rect key="frame" x="73.5" y="9" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="eFC-7H-dS9"/>
+                                <constraint firstAttribute="height" constant="60" id="mEo-4G-KxK"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icons8-brave-web-browser-150()-1" translatesAutoresizingMaskIntoConstraints="NO" id="yqr-Mj-uFa">
+                            <rect key="frame" x="280.5" y="14" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="RYl-b7-Jf7"/>
+                                <constraint firstAttribute="height" constant="60" id="d9w-6w-T2I"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-Th-z1O" userLabel="btn1">
+                            <rect key="frame" x="141" y="44" width="24" height="14"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=""/>
+                            <connections>
+                                <action selector="btnTabDegistir:" destination="t4A-0Y-4eg" eventType="touchUpInside" id="oAR-w4-Inb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwX-0u-pEA" userLabel="btn2">
+                            <rect key="frame" x="255" y="44" width="24" height="14"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=""/>
+                            <connections>
+                                <action selector="btnTabDegistir:" destination="t4A-0Y-4eg" eventType="touchUpInside" id="Kfn-r2-nmH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="YgG-Ye-z37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="F5X-pb-wm8" firstAttribute="leading" secondItem="nTb-MM-NO1" secondAttribute="trailing" id="22X-Q8-VU1"/>
+                        <constraint firstItem="nTb-MM-NO1" firstAttribute="leading" secondItem="YgG-Ye-z37" secondAttribute="leading" id="2sQ-y3-S3h"/>
+                        <constraint firstItem="YgG-Ye-z37" firstAttribute="trailing" secondItem="F5X-pb-wm8" secondAttribute="trailing" id="3UO-x7-7Sm"/>
+                        <constraint firstItem="nTb-MM-NO1" firstAttribute="top" secondItem="YgG-Ye-z37" secondAttribute="top" id="Anp-9c-btN"/>
+                        <constraint firstItem="nTb-MM-NO1" firstAttribute="bottom" secondItem="kJN-fN-0Fc" secondAttribute="bottom" id="Ghd-hG-1qK"/>
+                        <constraint firstItem="cwX-0u-pEA" firstAttribute="leading" secondItem="F5X-pb-wm8" secondAttribute="leading" id="NQC-Ty-RSY"/>
+                        <constraint firstItem="YgG-Ye-z37" firstAttribute="top" secondItem="bdc-Th-z1O" secondAttribute="top" id="S7R-lU-vHg"/>
+                        <constraint firstItem="bdc-Th-z1O" firstAttribute="trailing" secondItem="nTb-MM-NO1" secondAttribute="trailing" id="TA2-z1-HAU"/>
+                        <constraint firstItem="bdc-Th-z1O" firstAttribute="bottom" secondItem="nTb-MM-NO1" secondAttribute="bottom" id="UFT-XI-0jN"/>
+                        <constraint firstItem="bdc-Th-z1O" firstAttribute="leading" secondItem="nTb-MM-NO1" secondAttribute="leading" id="YF0-Uk-oGf"/>
+                        <constraint firstItem="iEM-Cv-XPR" firstAttribute="centerX" secondItem="nTb-MM-NO1" secondAttribute="centerX" id="YVd-gm-Ago"/>
+                        <constraint firstItem="F5X-pb-wm8" firstAttribute="bottom" secondItem="nTb-MM-NO1" secondAttribute="bottom" id="dDB-l6-7Zv"/>
+                        <constraint firstItem="yqr-Mj-uFa" firstAttribute="centerX" secondItem="F5X-pb-wm8" secondAttribute="centerX" id="e2w-vb-cVa"/>
+                        <constraint firstItem="F5X-pb-wm8" firstAttribute="top" secondItem="nTb-MM-NO1" secondAttribute="top" id="eYd-eS-B6T"/>
+                        <constraint firstItem="cwX-0u-pEA" firstAttribute="bottom" secondItem="F5X-pb-wm8" secondAttribute="bottom" id="jou-rx-lra"/>
+                        <constraint firstItem="F5X-pb-wm8" firstAttribute="top" secondItem="yqr-Mj-uFa" secondAttribute="bottom" constant="-30" id="n7N-Ej-x3D"/>
+                        <constraint firstItem="cwX-0u-pEA" firstAttribute="top" secondItem="bdc-Th-z1O" secondAttribute="top" id="oDY-R5-TLI"/>
+                        <constraint firstItem="F5X-pb-wm8" firstAttribute="width" secondItem="nTb-MM-NO1" secondAttribute="width" id="q9v-hg-QR2"/>
+                        <constraint firstItem="cwX-0u-pEA" firstAttribute="trailing" secondItem="F5X-pb-wm8" secondAttribute="trailing" id="qP1-08-DKo"/>
+                        <constraint firstItem="nTb-MM-NO1" firstAttribute="top" secondItem="iEM-Cv-XPR" secondAttribute="bottom" constant="-25" id="xo3-FH-oDf"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="541" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-apple-logo-150()-1" width="50" height="50"/>
+        <image name="icons8-brave-web-browser-150()-1" width="50" height="50"/>
+        <namedColor name="SeciliOlmayan">
+            <color red="0.86274509803921573" green="0.8784313725490196" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

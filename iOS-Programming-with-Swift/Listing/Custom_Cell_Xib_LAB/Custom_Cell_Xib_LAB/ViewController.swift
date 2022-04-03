@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Kisi Class'ındaki verileri kullanarak kisiListesine veri Eklemiş olduk.
         kisiListesi.append(Kisi(ad: "Halil", soyad: "Karkın", cinsiyet:"E"))
         kisiListesi.append(Kisi(ad: "Katty", soyad: "Perry", cinsiyet:"K"))
         kisiListesi.append(Kisi(ad: "Cristiano", soyad: "Ronaldo", cinsiyet:"E"))
@@ -31,11 +33,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
-    
+    // KisiListesi boyutunu/eleman sayısını tanımladık.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return kisiListesi.count
     }
     
+    
+    // TableView'deki satırlara kisiListesindeki verileri Ekledik.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = Bundle.main.loadNibNamed("TVC_Kisi", owner: self, options: nil)?.first as! TVC_Kisi
@@ -50,6 +54,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    // TableView listesindeki verileri sola kaydırma yaparak silme işlemi yaptık.
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            kisiListesi.remove(at: indexPath.row)
+            tvKisiler.reloadData()
+        }
     }
     
     

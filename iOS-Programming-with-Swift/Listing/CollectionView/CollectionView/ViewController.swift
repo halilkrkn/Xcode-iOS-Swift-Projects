@@ -7,7 +7,7 @@
 // CollectionView yapısı ile listeleri farklı akışlarda oluşturabiliyoruz.
 // Birden fazla sütunda verileri göstermek, yatat scroll'da verileri göstermek gibi
 // Sadece dikey değil yatay oval şekillerde listeleme yapmamıza olanak sağlıyor.
-// Android'dki RecyclerView Yapısı gibidir.
+// Android'dki RecyclerView Yapısı gibidir. 
 
 
 import UIKit
@@ -24,12 +24,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // CollectionView'ın Register Edilmesi Gerek
-//        1. Yöntem = register etmek için Xib dosyasını kullanırız. Yani Xib Dosyası ile bir Cell yapısı oluşturuyorsak bu methodu kullanmalıyız.
+        // 1. Yöntem = register etmek için Xib dosyasını kullanırız. Yani Xib Dosyası ile bir Cell yapısı oluşturuyorsak bu methodu kullanmalıyız.
           cvListe.register(UINib(nibName: "CVC_Item", bundle: nil), forCellWithReuseIdentifier: "CVC_Item")
         
         
-//        2. Yöntem = register etmek için bu cellClass yapısnı kullanırız. Ama bu methodu kullanmak için storyboard'un içerisindeki CollectionView'ın cell'ini storyboad üzerinden değiştireceksek kullacağız.
-//        cvListe.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        // 2. Yöntem = register etmek için bu cellClass yapısnı kullanırız. Ama bu methodu kullanmak için storyboard'un içerisindeki CollectionView'ın cell'ini storyboad üzerinden değiştireceksek kullacağız.
+        // cvListe.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        
+        
+        // Akışı ve görseli değiştirebilmek için CollectionView içerisindeki FlowLayout nesnelerini kullanmamız gerekiyor.
+        // Burada CollectionView'ın FlowLayout'unu oluşturacaz.
+        // ColumnFlowLayout Sınıfı burda cocollectionViewLayout methoduna atadık ve UI kişiselleştirmiş olduğumuz sutün sayısı görselini gösterdik.
+        cvListe.collectionViewLayout = ColumnFlowLayout(sutunSayisi: 5, minSutunAraligi: 10, minSatirAraligi: 20)
         
 
     }

@@ -15,6 +15,7 @@
 		1037F20C27FACAE00017BC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1037F20A27FACAE00017BC2F /* LaunchScreen.storyboard */; };
 		1037F21727FAD2640017BC2F /* CVC_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1037F21527FAD2640017BC2F /* CVC_Item.swift */; };
 		1037F21827FAD2640017BC2F /* CVC_Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1037F21627FAD2640017BC2F /* CVC_Item.xib */; };
+		1037F21A27FAE7C20017BC2F /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1037F21927FAE7C20017BC2F /* ColumnFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1037F20D27FACAE00017BC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1037F21527FAD2640017BC2F /* CVC_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVC_Item.swift; sourceTree = "<group>"; };
 		1037F21627FAD2640017BC2F /* CVC_Item.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVC_Item.xib; sourceTree = "<group>"; };
+		1037F21927FAE7C20017BC2F /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1037F20D27FACAE00017BC2F /* Info.plist */,
 				1037F21527FAD2640017BC2F /* CVC_Item.swift */,
 				1037F21627FAD2640017BC2F /* CVC_Item.xib */,
+				1037F21927FAE7C20017BC2F /* ColumnFlowLayout.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				1037F20427FACAD70017BC2F /* ViewController.swift in Sources */,
 				1037F20027FACAD70017BC2F /* AppDelegate.swift in Sources */,
+				1037F21A27FAE7C20017BC2F /* ColumnFlowLayout.swift in Sources */,
 				1037F20227FACAD70017BC2F /* SceneDelegate.swift in Sources */,
 				1037F21727FAD2640017BC2F /* CVC_Item.swift in Sources */,
 			);

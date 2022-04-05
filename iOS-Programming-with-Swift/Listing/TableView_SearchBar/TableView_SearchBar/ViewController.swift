@@ -11,6 +11,7 @@ class ViewController: UIViewController{
 
     @IBOutlet weak var sbListe: UISearchBar!
     @IBOutlet weak var tvListe: UITableView!
+    @IBOutlet weak var tfArama: UITextField!
     
     // SearchBar'da arama yapıldığında TableView'e filtrelenmiş olan listeyi doldurmamız gerekiyor.
     // Bunun için iki tane listeye ihtiyacımız var. Bunlardan bir tanesi TAM LİSTE diğeri ise FILTRELENMİŞ LİSTE
@@ -24,6 +25,31 @@ class ViewController: UIViewController{
         // Do any additional setup after loading the view.
         
         filtreliListe.append(contentsOf: tamListe)
+    }
+
+    @IBAction func tfArama(_ sender: Any) {
+        
+        filtreliListe.removeAll()
+        
+        if tfArama.text!.isEmpty {
+            
+            filtreliListe.append(contentsOf: tamListe)
+            
+        } else {
+            
+            for meyve in tamListe {
+                
+                if meyve.range(of: tfArama.text!) != nil {
+                    
+                    filtreliListe.append(meyve)
+                    
+                }
+                    
+            }
+        }
+        tvListe.reloadData()
+        
+        
     }
 }
 

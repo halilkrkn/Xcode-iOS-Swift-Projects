@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataIntroLAB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPg-Fg-WDc">
+                                <rect key="frame" x="350" y="44" width="49" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0mB-5U-09L" kind="show" id="0dI-UQ-zvm"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="esA-9r-HTi">
+                                <rect key="frame" x="15" y="121" width="384" height="726"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TnY-zh-OOQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="D1E-Qv-z79"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="esA-9r-HTi" firstAttribute="top" secondItem="HPg-Fg-WDc" secondAttribute="bottom" constant="15" id="DJc-lh-Qaj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="esA-9r-HTi" secondAttribute="bottom" constant="15" id="WlL-Ri-DaD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="esA-9r-HTi" secondAttribute="trailing" constant="15" id="dph-gP-V1t"/>
+                            <constraint firstItem="esA-9r-HTi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="j4W-SY-Ymc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HPg-Fg-WDc" secondAttribute="trailing" constant="15" id="qev-cX-957"/>
+                            <constraint firstItem="HPg-Fg-WDc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z82-X3-b6Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tvKisiListe" destination="esA-9r-HTi" id="qOq-xD-ZzT"/>
+                        <segue destination="0mB-5U-09L" kind="show" identifier="sgDuzenle" id="AJf-kP-OGU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="119"/>
+        </scene>
+        <!--View Controller Ekle Duzenle-->
+        <scene sceneID="meI-BJ-cRe">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="0mB-5U-09L" customClass="ViewControllerEkleDuzenle" customModule="CoreDataIntroLAB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rr-cF-ap1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAf-yA-cfP">
+                                <rect key="frame" x="15" y="54" width="71.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Vazgeç"/>
+                                <connections>
+                                    <action selector="btnVazgec:" destination="0mB-5U-09L" eventType="touchUpInside" id="tWa-d3-fbp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="23D-2a-kIx">
+                                <rect key="frame" x="10" y="145" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vwr-tw-FTa">
+                                <rect key="frame" x="9" y="199" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eI-3K-HvL">
+                                <rect key="frame" x="132" y="427" width="138" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kaydet">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnKaydet:" destination="0mB-5U-09L" eventType="touchUpInside" id="nVZ-Cy-yTb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="plo-bf-tys">
+                                <rect key="frame" x="10" y="253" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tZI-Vo-HuS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2eI-3K-HvL" firstAttribute="leading" secondItem="tZI-Vo-HuS" secondAttribute="leading" constant="140" id="0Xj-UD-bfG"/>
+                            <constraint firstItem="plo-bf-tys" firstAttribute="trailing" secondItem="Vwr-tw-FTa" secondAttribute="trailing" id="26e-Pc-eHg"/>
+                            <constraint firstItem="tZI-Vo-HuS" firstAttribute="trailing" secondItem="2eI-3K-HvL" secondAttribute="trailing" constant="140" id="7nM-BP-oa3"/>
+                            <constraint firstItem="plo-bf-tys" firstAttribute="leading" secondItem="Vwr-tw-FTa" secondAttribute="leading" id="EZ5-YY-XyK"/>
+                            <constraint firstItem="23D-2a-kIx" firstAttribute="top" secondItem="aAf-yA-cfP" secondAttribute="bottom" constant="15" id="MCV-MC-jUV"/>
+                            <constraint firstItem="Vwr-tw-FTa" firstAttribute="top" secondItem="23D-2a-kIx" secondAttribute="bottom" constant="15" id="MYA-Gc-k1f"/>
+                            <constraint firstItem="23D-2a-kIx" firstAttribute="leading" secondItem="tZI-Vo-HuS" secondAttribute="leading" constant="15" id="Xfl-au-u3E"/>
+                            <constraint firstItem="aAf-yA-cfP" firstAttribute="leading" secondItem="tZI-Vo-HuS" secondAttribute="leading" constant="15" id="a2M-Ac-dEN"/>
+                            <constraint firstItem="plo-bf-tys" firstAttribute="top" secondItem="Vwr-tw-FTa" secondAttribute="bottom" constant="15" id="b1c-n5-Jui"/>
+                            <constraint firstItem="tZI-Vo-HuS" firstAttribute="trailing" secondItem="23D-2a-kIx" secondAttribute="trailing" constant="15" id="bXh-uq-MeO"/>
+                            <constraint firstItem="Vwr-tw-FTa" firstAttribute="trailing" secondItem="23D-2a-kIx" secondAttribute="trailing" id="cDv-qo-klp"/>
+                            <constraint firstItem="tZI-Vo-HuS" firstAttribute="bottom" secondItem="2eI-3K-HvL" secondAttribute="bottom" constant="363" id="eK0-C1-VUk"/>
+                            <constraint firstItem="aAf-yA-cfP" firstAttribute="top" secondItem="tZI-Vo-HuS" secondAttribute="top" constant="10" id="xtJ-wn-eOq"/>
+                            <constraint firstItem="Vwr-tw-FTa" firstAttribute="leading" secondItem="23D-2a-kIx" secondAttribute="leading" id="ycK-cz-Luo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Am1-Kr-D1e"/>
+                    <connections>
+                        <outlet property="tfAd" destination="23D-2a-kIx" id="K4h-ZS-SuX"/>
+                        <outlet property="tfEmail" destination="plo-bf-tys" id="6XS-BQ-h9v"/>
+                        <outlet property="tfSoyad" destination="Vwr-tw-FTa" id="qMW-PT-FWq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZE-ut-1xo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444.9275362318842" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AJf-kP-OGU"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

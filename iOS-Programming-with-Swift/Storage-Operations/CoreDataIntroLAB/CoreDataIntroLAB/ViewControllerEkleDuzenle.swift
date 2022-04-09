@@ -61,6 +61,7 @@ class ViewControllerEkleDuzenle: UIViewController {
             
         } else {
             // TextField'lardan Aldığımız verileri ilgili değişkenlere atadık.
+            // Güncelleme İçin
             kisi!.ad = tfAd.text!
             kisi!.soyad = tfSoyad.text!
             kisi!.email = tfEmail.text!

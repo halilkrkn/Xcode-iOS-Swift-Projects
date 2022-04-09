@@ -102,6 +102,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             
             (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext.delete(kisiListesi![indexPath.row])
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
             kisilerGetir()
             
         }

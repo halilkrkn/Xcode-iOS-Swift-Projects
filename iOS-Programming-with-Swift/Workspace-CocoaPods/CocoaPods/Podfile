@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CocoaPods' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+#   Kütüphanelerin Eklenmesi gereken Alan
+# Burada "~>" işareti "4.0"'dan büyük güncel versiyonları al demektir. Eğer bu "~>" işareti kullanmayıp sadece versiyon numarasını yazarsak da ilgili versiyonu indirmiş oluruzç
+# Buraya eklenen kütüphane terminalde ilgili proje dosyasının içerisinden "pod install" denilerek kütüphanenin kurulumu yapılması sağlanır.
+  pod 'SwiftyJSON', '~> 4.0'
+  
+
+end
